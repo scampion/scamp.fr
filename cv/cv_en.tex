@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+%%\usepackage[backend=biber]{biblatex}
+
+\bibliography{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+
+\header{Sebastien}{Campion}{Research Engineer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+15, place de la Mairie
+35250 Saint-Germain sur Ille
+France
+~
++0 (33) 6 99 40 49 23
++0 (33) 9 72 32 60 71
+~
+\href{mailto:sebastien.campion@gmail.com}{seb@scamp.fr}
+\href{http://scamp.fr}{http://scamp.fr}
+\section{languages}
+french mother tongue
+english \& spanish %%fluency
+\section{skills}
+{\color{red} $\varheartsuit$} Python, %%{\color{blue}  $\vardiamondsuit$} 
+Linux
+Git, Cython, C, C++, Scientific Computing, Machine Learning, Java, Javascript, PHP, HTML5
+...
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{1999--2002}
+{Master's degree in Engineering {\normalfont of Computer Science and Telecommunications}}
+{\href{https://esir.univ-rennes1.fr}{ESIR, University of Rennes 1}, France}
+{Specialization in language and computer system.}
+%------------------------------------------------
+% \entry
+% {2007--2008}
+% {DEUG (two-year university degree) {\normalfont Science of Matter}}
+% {University of Rouen, France}
+% {Specialization in computer science}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+%------------------------------------------------
+
+\entry
+{2007--Now}
+{\href{http://www.inria.fr/}{INRIA}}
+{Rennes, France}
+{ 
+Research Engineer in a public science and technology institution, I'm working mainly for the \href{http://www.irisa.fr/texmex/}{\underline{TEXMEX}} team. Our scientific topics are efficient exploitation, indexing, navigation, and access of very large multimedia databases.
+ \\
+TEXMEX activities : 
+\begin{itemize}
+\item Managing our platform for indexing  multimedia contents  
+\begin{itemize}
+\item Near 200TB of multimedia data
+\item Large memory servers (up to 256GB of RAM)
+\item 10GB/s Network
+\item Local computing cluster \href{http://igrida.gforge.inria.fr}{\underline{IGRIDA}} (1200 cores) contributions
+\item Digital TV and Radio capture and analyzes (MPEG2 / IP Multicast)
+\end{itemize}
+\item Coarse-grain distributed computing (Sun Grid Engine / \href{http://oar.imag.fr}{OAR})
+\item Contributing to scientific experimentations
+\item Developing and improving scientific prototypes 
+\item Elaborating corpora / ground-truth for experimentation evaluations 
+\item Publishing demo and online web services \url{http://texmix.irisa.fr}
+\end{itemize}
+
+National activities : 
+\begin{itemize}
+\item Technical director for the \href{http://gforge.inria.fr}{\underline{INRIA Forge}} 
+
+\begin{itemize}
+\item A million of hits per month
+\item 14 000 registered users
+\item 4 300 hosted projects
+\item 1 TB of data
+\item 3 x Debian/VMWare OS + NetApp NFS 
+\end{itemize}
+
+\item Trainings:
+\begin{itemize}
+\item \href{https://github.com/scampion/multimedia-machine-learning-tutorials}{\underline{\emph{Multimedia machine learning tutorials}}} for master degrees students
+\item \emph{Software development process} for public institute lawyers managed by \href{http://www.ieepi.org}{\underline{IEEPI}} (European intellectual property institute)
+\end{itemize}
+\end{itemize}
+}
+
+\entry
+{2002--2007}
+{Orange Labs {\normalfont  (formerly France Telecom R\&D)}}
+{Rennes, France}
+{Junior Project Manager for TV/VOD metadata management networks
+\begin{itemize}
+\item Project on metadata aggregation service uses as repos for multimedia contents distributed on Orange's networks (IP, ADSL, Mobile) 
+\item Mobile TV project: Specification and development of a electronic service guide for mobile terminals\cite{4114771} through an experimentation handled to DVB-H (Digital Video Broadcasting standard).
+\item Development of TV/VOD portal access by Orange ADSL TV Set Top Boxes.
+\end{itemize}
+}
+
+\entry
+{2001}
+{Thomson Grass Valley}w
+{Rennes, France}
+{\emph{Internship (3 months)} Development of a web monitoring tool which centralize logs generated by various audiovisual appliances (encoder, multiplexer, decoder, ...) }
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional:} digital hacks,, large scale, geopolitics, web design, software design. \\
+\textbf{personal:} family life, cooking, piano, sailing.
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+\printbibsection{book}{books} % Print all books from the bibliography
+\printbibsection{inproceedings}{international peer-reviewed conferences/proceedings} % Print all 
+\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+\printbibsection{report}{research reports} % Print all research reports from the bibliography
+\printbibsection{patent}{patents} % Print all research reports from the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

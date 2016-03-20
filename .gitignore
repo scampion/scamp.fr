@@ -1,1 +1,9 @@
+cv.backup
 .DS_Store
+.DS_Store
+*.aux
+*.log
+*.pdf
+*.gz
+*.out
+

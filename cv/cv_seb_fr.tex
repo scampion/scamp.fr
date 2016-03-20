@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\usepackage[francais]{babel}
+\usepackage{csquotes}
+%%\usepackage[latin1]{inputenc}
+
+
+%%\usepackage[backend=biber]{biblatex}
+
+\bibliography{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+
+\header{Sébastien}{Campion}{Ingénieur de Recherche} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+15, place de la Mairie
+35250 Saint-Germain sur Ille
+France
+~
++0 (33) 6 99 40 49 23
++0 (33) 9 72 32 60 71
+~
+\href{mailto:sebastien.campion@gmail.com}{seb@scamp.fr}
+\href{http://scamp.fr}{http://scamp.fr}
+\section{langues}
+Français et Anglais
+%english \& spanish %%fluency
+\section{Compétences}
+{\color{red} $\varheartsuit$} Python, %%{\color{blue}  $\vardiamondsuit$} 
+Linux
+Git, Cython, C, C++, Scientific Computing, Machine Learning, Java, Javascript, PHP, HTML5
+...
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Formation}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{1999--2002}
+{Diplôme d'Ingénieur   {\normalfont en Informatique et Télécommunications}}
+{\href{https://esir.univ-rennes1.fr}{ESIR, Université de Rennes 1}, France}
+{Spécialisation en langage et systèmes.}
+%------------------------------------------------
+% \entry
+% {2007--2008}
+% {DEUG (two-year university degree) {\normalfont Science of Matter}}
+% {University of Rouen, France}
+% {Specialization in computer science}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Expériences}
+
+\begin{entrylist}
+
+%  \entry
+%  {depuis 2015}
+%  {Mediego}
+%  {Rennes, Bretagne, France}
+%  {
+%  Directeur technique \href{http://www.mediego.com}
+%  }
+% %------------------------------------------------
+\entry
+{depuis 2015}
+{Mediego  \href{http://www.mediego.com}}
+{Rennes, Bretagne, France}
+{
+
+Co-fondateur et Directeur technique de la société \href{https://www.mediego.com}{\underline{MEDIEGO}}
+
+\begin{itemize}
+\item Recommandation personnalisé temps réel
+\item Lauréat 2015 Réseau Entreprendre, i-Lab et Creacc.
+\end{itemize}
+
+}
+
+
+%------------------------------------------------
+ \entry
+ {2007--2015}
+ {INRIA}
+ {Rennes, Bretagne, France}
+ {
+ 
+ Ingénieur de recherche principalement détaché au sein de l'équipe \href{https://www-linkmedia.irisa.fr/}{\underline{LINKMEDIA}}. 
+ 
+ Nos sujets scientifiques sont l'exploitation, l'indexation, la navigation et l'accès aux larges collections de données multimédia.
+ \\
+Activités principales : 
+
+\begin{itemize}
+\item Responsable de la plateforme d'indexation multimedia  (200TB de données multimédia, serveurs à large capacité de mémoire vive jusqu'a 256GB, réseau 10GB/s)
+\item Contributions au meso-cluster \href{http://igrida.gforge.inria.fr}{\underline{IGRIDA}} (1200 coeurs) 
+% \item Capture et analyse de flux numérique TV et Radio (MPEG2 / IP Multicast)
+% \item Calcul distribué gros grains  (Sun Grid Engine / \href{http://oar.imag.fr}{OAR})
+% \item Contributions aux expérimentations scientifiques
+% \item Développement et amélioration de prototypes scientifiques
+% \item Élaboration de corpus et vérités terrains pour les évaluations expérimentales. 
+\item Publication de \href{http://texmix.irisa.fr}{\underline{démonstrateur}} et de  \href{http://allgo.irisa.fr}{\underline{services web}} en ligne.
+\end{itemize}
+
+Activités nationales : 
+\begin{itemize}
+\item Directeur technique de la \href{http://gforge.inria.fr}{\underline{forge INRIA}} 
+(
+Un million de visite par mois, 17 000 utilisateurs inscrits, 6 000 projects hébergés, 2 TB of data, 3 x Debian/VMWare OS + NetApp NFS)
+
+\item Formations:
+\begin{itemize}
+\item \href{https://github.com/scampion/multimedia-machine-learning-tutorials}{\underline{\emph{Multimedia machine learning tutorials}}} pour master 2
+\item \emph{Le processus de développement logiciel} à destination des chargés de valorisation des instituts publiques supervisée par l'\href{http://www.ieepi.org}{\underline{IEEPI}}
+\end{itemize}
+\end{itemize}
+ 
+ }
+%------------------------------------------------
+\entry
+{2002--2007}
+ {Orange Labs {\normalfont  (France Telecom R\&D)}}
+ {Rennes, Bretagne, France}
+ {
+ Chef de projet junior pour la gestion des métadonnées audiovisuelles sur les réseaux TV/VOD. 
+ \begin{itemize}
+\item Projet de service d'agrégation des métadonnées des contenus multimédias distribués sur les réseaux Orange (IP, ADSL, Mobile)
+\item Projet TV Mobile: Spécification et développement d'un guide de programme électronique pour terminaux mobiles \cite{4114771} avec une expérimentation  DVB-H (Digital Video Broadcasting standard).
+\item Développement  d'un portail d'accès TV/VOD  dédié aux terminaux Orange ADSL TV.
+\end{itemize}
+}
+
+
+\entry
+{2001}
+{Thomson Grass Valley  {\normalfont  (Technicolor)}}
+{Rennes, Bretagne, France}
+{\emph{Stage (3 mois)} Développement d'un outil de monitoring web pour la visualisation et la centralisation des évènements remontés par les divers équipements (encodeurs, multiplexeurs, décodeurs, ...)}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Intérêts}
+
+\textbf{professionnels:}  ingénierie numérique large échelle. \\
+\textbf{personels:} course à pied et voile.
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+\printbibsection{article}{Article publié dans des revues} % Print all articles from the bibliography
+\printbibsection{book}{books} % Print all books from the bibliography
+\printbibsection{inproceedings}{Conférences internationales} % Print all 
+\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+\printbibsection{report}{research reports} % Print all research reports from the bibliography
+\printbibsection{patent}{Brevets} % Print all research reports from the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
