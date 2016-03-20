@@ -3,7 +3,7 @@ cv.backup
 .DS_Store
 *.aux
 *.log
-*.pdf
 *.gz
 *.out
-
+*.bcf
+*.run.xml

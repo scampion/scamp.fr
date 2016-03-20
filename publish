@@ -1,0 +1,3 @@
+#!/bin/sh
+mv cv/sebastien_campion_resume.pdf sebastien_campion_resume.pdf
+rsync  --exclude cv.backup -ave ssh *  scamp@ftp.cluster014.ovh.net:/home/scamp/www/
